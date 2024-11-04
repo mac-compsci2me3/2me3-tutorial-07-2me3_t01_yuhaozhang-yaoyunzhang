@@ -11,6 +11,10 @@ public class Article extends ArticleComponent {
     public void removeComponent(ArticleComponent component) {
         components.remove(component);
     }
+    // Factory Method to return an ArticleIterator for the components
+    public ArticleIterator iterator() {
+        return new ArticleIterator(components);
+    }
 
     @Override
     public void display() {

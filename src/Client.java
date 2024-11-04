@@ -9,10 +9,10 @@ public class Client {
         article.addComponent(new Picture("image2.jpg"));
 
         // Once the iterator class is implemented, you can uncomment the following code to test your iterator
-        // ArticleIterator iterator = article.iterator();
-        // while (iterator.hasNext()) {
-        //     ArticleComponent component = iterator.next();
-        //     component.display();
-        // }
+        ArticleIterator iterator = article.iterator();
+        while (iterator.hasNext()) {
+            ArticleComponent component = iterator.next();
+            component.display();
+        }
     }
 }
